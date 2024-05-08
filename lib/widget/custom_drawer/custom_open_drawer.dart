@@ -1,6 +1,7 @@
 import 'package:birdsviewadminpannel/views/add_bar/add_bar.dart';
 import 'package:birdsviewadminpannel/views/add_users/add_user.dart';
 import 'package:birdsviewadminpannel/views/dashboard/dashboard.dart';
+import 'package:birdsviewadminpannel/views/view_all_bars/view_all_bars.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -354,11 +355,11 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                             },
                             child: ListTile(
                               onTap: () {
-                                // Navigator.push(
-                                //     context,
-                                //     MaterialPageRoute(
-                                //         builder: (context) =>
-                                //             const AddUsers()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const ViewAllBars()));
                               },
                               leading: Icon(
                                 CupertinoIcons.square,
