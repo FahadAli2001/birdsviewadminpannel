@@ -478,7 +478,7 @@ class _DashBoardState extends State<DashBoard> {
                                           children: [
                                             const Icon(
                                                 CupertinoIcons.shopping_cart,
-                                                color: Colors.green),
+                                                color: Colors.yellow),
                                             SizedBox(
                                               child: Column(
                                                 crossAxisAlignment:

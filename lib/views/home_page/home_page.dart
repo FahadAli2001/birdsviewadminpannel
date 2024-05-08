@@ -18,19 +18,22 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: Stack(
           children: [
-            Container(
-              width: size.width * 0.3,
-              height: size.height * 0.45,
-              decoration: const BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(10),
-                      topLeft: Radius.circular(10),
-                      bottomLeft: Radius.circular(10),
-                      bottomRight: Radius.circular(10))),
+            Card(
+              elevation: 6,
+              child: Container(
+                width: size.width * 0.3,
+                height: size.height * 0.45,
+                decoration: const BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(10),
+                        topLeft: Radius.circular(10),
+                        bottomLeft: Radius.circular(10),
+                        bottomRight: Radius.circular(10))),
+              ),
             ),
             Positioned(
-              top: size.height * 0.005,
+              top: size.height * 0.010,
               left: 0,
               right: 0,
               child: Container(

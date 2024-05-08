@@ -18,6 +18,10 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
   bool adduser = false;
   bool viewuser = false;
   bool bars = false;
+  bool isBarsOpened = false;
+  bool addbar = false;
+  bool allbar = false;
+  bool inactivebar = false;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.sizeOf(context);
@@ -271,6 +275,15 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                   });
                 },
                 child: ListTile(
+                  onTap: () {
+                    if (isBarsOpened == true) {
+                      isBarsOpened = false;
+                      setState(() {});
+                    } else {
+                      isBarsOpened = true;
+                      setState(() {});
+                    }
+                  },
                   leading: Icon(
                     CupertinoIcons.square,
                     color: Colors.white,
@@ -287,7 +300,139 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                   ),
                 ),
               ),
-            )
+            ),
+            //
+            isBarsOpened == true
+                ? SizedBox(
+                    child: Column(
+                      children: [
+                        Material(
+                          borderRadius: BorderRadius.circular(5),
+                          color: addbar
+                              ? Colors.grey.shade500
+                              : Colors.grey.shade800,
+                          child: MouseRegion(
+                            onEnter: (_) {
+                              setState(() {
+                                addbar = true;
+                              });
+                            },
+                            onExit: (_) {
+                              setState(() {
+                                addbar = false;
+                              });
+                            },
+                            child: ListTile(
+                              onTap: () {
+                                // Navigator.push(
+                                //     context,
+                                //     MaterialPageRoute(
+                                //         builder: (context) =>
+                                //             const AddUsers()));
+                              },
+                              leading: Icon(
+                                CupertinoIcons.square,
+                                color: Colors.white,
+                                size: size.width * 0.015,
+                              ),
+                              title: const Text(
+                                'Add Bar',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              trailing: Icon(
+                                CupertinoIcons.square,
+                                color: Colors.white,
+                                size: size.width * 0.015,
+                              ),
+                            ),
+                          ),
+                        ),
+                         Material(
+                          borderRadius: BorderRadius.circular(5),
+                          color: allbar
+                              ? Colors.grey.shade500
+                              : Colors.grey.shade800,
+                          child: MouseRegion(
+                            onEnter: (_) {
+                              setState(() {
+                                allbar = true;
+                              });
+                            },
+                            onExit: (_) {
+                              setState(() {
+                                allbar = false;
+                              });
+                            },
+                            child: ListTile(
+                              onTap: () {
+                                // Navigator.push(
+                                //     context,
+                                //     MaterialPageRoute(
+                                //         builder: (context) =>
+                                //             const AddUsers()));
+                              },
+                              leading: Icon(
+                                CupertinoIcons.square,
+                                color: Colors.white,
+                                size: size.width * 0.015,
+                              ),
+                              title: const Text(
+                                'All Bars',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              trailing: Icon(
+                                CupertinoIcons.square,
+                                color: Colors.white,
+                                size: size.width * 0.015,
+                              ),
+                            ),
+                          ),
+                        ),
+                         Material(
+                          borderRadius: BorderRadius.circular(5),
+                          color: inactivebar
+                              ? Colors.grey.shade500
+                              : Colors.grey.shade800,
+                          child: MouseRegion(
+                            onEnter: (_) {
+                              setState(() {
+                                inactivebar = true;
+                              });
+                            },
+                            onExit: (_) {
+                              setState(() {
+                                inactivebar = false;
+                              });
+                            },
+                            child: ListTile(
+                              onTap: () {
+                                // Navigator.push(
+                                //     context,
+                                //     MaterialPageRoute(
+                                //         builder: (context) =>
+                                //             const AddUsers()));
+                              },
+                              leading: Icon(
+                                CupertinoIcons.square,
+                                color: Colors.white,
+                                size: size.width * 0.015,
+                              ),
+                              title: const Text(
+                                'Inactive Bar',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              trailing: Icon(
+                                CupertinoIcons.square,
+                                color: Colors.white,
+                                size: size.width * 0.015,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                : const SizedBox()
           ],
         ),
       ),

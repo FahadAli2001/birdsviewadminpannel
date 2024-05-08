@@ -165,85 +165,129 @@ class _ViewAllUsersState extends State<ViewAllUsers> {
                         ],
                       ),
                       //
-                      Container(
-                        width: size.width,
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: ListView(
-                          shrinkWrap: true,
-                          physics: const NeverScrollableScrollPhysics(),
-                          children: [
-                            DataTable(
-                              columns: const [
-                                DataColumn(
-                                    label: Text(
-                                  'Id',
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                )),
-                                DataColumn(
-                                    label: Text('User Name',
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.bold))),
-                                DataColumn(
-                                    label: Text('Image',
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.bold))),
-                                DataColumn(
-                                    label: Text('Email',
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.bold))),
-                                             DataColumn(
-                                    label: Text('Role',
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.bold))),
-                                             DataColumn(
-                                    label: Text('Edit',
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.bold))),
-                                             DataColumn(
-                                    label: Text('Delete',
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.bold))),
-                              ],
-                              rows:   [
-                                DataRow(
-                                  cells: [
-                                  const  DataCell(Text('1')),
-                                 const   DataCell(Text('User 1')),
-                               const   DataCell(
-                                    
-                                    CircleAvatar(
-                                      backgroundColor: Colors.white,
-                                      backgroundImage:
-                                          AssetImage('assets/logo.png'),
-                                      radius: 20,
-                                    ),
-                                  ),
-                               const   DataCell(Text('user@gmail.com')),
-                                  DataCell(Container(
-                                   margin:const EdgeInsets.all(5),
-                                    height: size.height * 0.05,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:const Center(child: Text("Appoint As Admin",
-                                    style: TextStyle(color: Colors.white),)),
+                      Card(
+                        elevation: 10,
+                        child: Container(
+                          width: size.width,
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey.shade300)
+                          ),
+                          child: ListView(
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            children: [
+                              DataTable(
+                                columns: const [
+                                  DataColumn(
+                                      label: Text(
+                                    'Id',
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
                                   )),
-                               const   DataCell(Icon(CupertinoIcons.square_pencil_fill,color:Colors.blue)),
-                               const   DataCell(Icon(CupertinoIcons.delete_solid,color:Colors.red)),
-                                ]),
-                                 
-                              ],
-                            ),
-                          ],
+                                  DataColumn(
+                                      label: Text('User Name',
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold))),
+                                  DataColumn(
+                                      label: Text('Image',
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold))),
+                                  DataColumn(
+                                      label: Text('Email',
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold))),
+                                  DataColumn(
+                                      label: Text('Role',
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold))),
+                                  DataColumn(
+                                      label: Text('Edit',
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold))),
+                                  DataColumn(
+                                      label: Text('Delete',
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold))),
+                                ],
+                                rows: [
+                                  DataRow(
+                                    cells: [
+                                    const DataCell(Text('1')),
+                                    const DataCell(Text('User 1')),
+                                    const DataCell(
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        backgroundImage:
+                                            AssetImage('assets/logo.png'),
+                                        radius: 20,
+                                      ),
+                                    ),
+                                    const DataCell(Text('user@gmail.com')),
+                                    DataCell(Container(
+                                      margin: const EdgeInsets.all(5),
+                                      height: size.height * 0.05,
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(5)),
+                                      child: const Center(
+                                          child: Text(
+                                        "Appoint As Admin",
+                                        style: TextStyle(color: Colors.white),
+                                      )),
+                                    )),
+                                    const DataCell(Icon(
+                                        CupertinoIcons.square_pencil_fill,
+                                        color: Colors.blue)),
+                                    const DataCell(Icon(
+                                        CupertinoIcons.delete_solid,
+                                        color: Colors.red)),
+                                  ]),
+                                  //
+                                    DataRow(
+                                    cells: [
+                                    const DataCell(Text('2')),
+                                    const DataCell(Text('User 2')),
+                                    const DataCell(
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        backgroundImage:
+                                            AssetImage('assets/logo.png'),
+                                        radius: 20,
+                                      ),
+                                    ),
+                                    const DataCell(Text('user2@gmail.com')),
+                                    DataCell(Container(
+                                      margin: const EdgeInsets.all(5),
+                                      height: size.height * 0.05,
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(5)),
+                                      child: const Center(
+                                          child: Text(
+                                        "Appoint As Admin",
+                                        style: TextStyle(color: Colors.white),
+                                      )),
+                                    )),
+                                    const DataCell(Icon(
+                                        CupertinoIcons.square_pencil_fill,
+                                        color: Colors.blue)),
+                                    const DataCell(Icon(
+                                        CupertinoIcons.delete_solid,
+                                        color: Colors.red)),
+                                  ]),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
