@@ -208,11 +208,7 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'Add User',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              trailing: Icon(
-                                CupertinoIcons.square,
-                                color: Colors.white,
-                                size: size.width * 0.015,
-                              ),
+                              
                             ),
                           ),
                         ),
@@ -249,11 +245,7 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'View All User',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              trailing: Icon(
-                                CupertinoIcons.square,
-                                color: Colors.white,
-                                size: size.width * 0.015,
-                              ),
+                              
                             ),
                           ),
                         ),
@@ -340,11 +332,7 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'Add Bar',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              trailing: Icon(
-                                CupertinoIcons.square,
-                                color: Colors.white,
-                                size: size.width * 0.015,
-                              ),
+                              
                             ),
                           ),
                         ),
@@ -381,11 +369,7 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'All Bars',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              trailing: Icon(
-                                CupertinoIcons.square,
-                                color: Colors.white,
-                                size: size.width * 0.015,
-                              ),
+                              
                             ),
                           ),
                         ),
@@ -422,11 +406,7 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'Inactive Bar',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              trailing: Icon(
-                                CupertinoIcons.square,
-                                color: Colors.white,
-                                size: size.width * 0.015,
-                              ),
+                              
                             ),
                           ),
                         ),

@@ -72,18 +72,21 @@ class _AddBarState extends State<AddBar> {
                           ),
                         ),
                       ),
-                      Container(
-                        width: size.width * 0.07,
-                        height: size.height * 0.06,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(5),
-                            color: Colors.blue.shade600),
-                        child: const Center(
-                          child: Text(
-                            'Log Out',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
+                      Card(
+                        elevation: 5,
+                        child: Container(
+                          width: size.width * 0.07,
+                          height: size.height * 0.06,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              color: Colors.blue.shade600),
+                          child: const Center(
+                            child: Text(
+                              'Log Out',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
                         ),
                       ),
@@ -328,17 +331,20 @@ class _AddBarState extends State<AddBar> {
                               height: size.height * 0.09,
                               child: Row(
                                 children: [
-                                  Container(
-                                    width: size.width * 0.1,
-                                    decoration: BoxDecoration(
-                                        color: Colors.blue.shade600,
-                                        borderRadius: BorderRadius.circular(5)),
-                                    child: const Center(
-                                      child: Text(
-                                        'Submit',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
+                                  Card(
+                                    elevation: 5,
+                                    child: Container(
+                                      width: size.width * 0.1,
+                                      decoration: BoxDecoration(
+                                          color: Colors.blue.shade600,
+                                          borderRadius: BorderRadius.circular(5)),
+                                      child: const Center(
+                                        child: Text(
+                                          'Submit',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
                                       ),
                                     ),
