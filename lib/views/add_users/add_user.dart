@@ -277,12 +277,10 @@ class _AddUsersState extends State<AddUsers> {
                                   Container(
                                     width: size.width * 0.1,
                                     decoration: BoxDecoration(
-                                      color: Colors.blue.shade600,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                     
-                                    child:const Center(
-                                      child:   Text(
+                                        color: Colors.blue.shade600,
+                                        borderRadius: BorderRadius.circular(5)),
+                                    child: const Center(
+                                      child: Text(
                                         'Submit',
                                         style: TextStyle(
                                           color: Colors.white,

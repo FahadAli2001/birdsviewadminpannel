@@ -3,6 +3,8 @@ import 'package:birdsviewadminpannel/views/dashboard/dashboard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../views/view_all_user/view_all_user.dart';
+
 class CustomOpenDrawer extends StatefulWidget {
   const CustomOpenDrawer({super.key});
 
@@ -106,8 +108,10 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                   borderRadius: BorderRadius.circular(5)),
               child: ListTile(
                 onTap: () {
-                   Navigator.push(context, MaterialPageRoute(builder: (context)
-                                =>const DashBoard()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const DashBoard()));
                 },
                 leading: Icon(CupertinoIcons.square,
                     color: Colors.white, size: size.width * 0.015),
@@ -184,8 +188,11 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                             },
                             child: ListTile(
                               onTap: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context)
-                                =>const AddUsers()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const AddUsers()));
                               },
                               leading: Icon(
                                 CupertinoIcons.square,
@@ -221,7 +228,13 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                               });
                             },
                             child: ListTile(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const ViewAllUsers()));
+                              },
                               leading: Icon(
                                 CupertinoIcons.square,
                                 color: Colors.white,
