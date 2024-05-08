@@ -209,7 +209,6 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'Add User',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              
                             ),
                           ),
                         ),
@@ -246,7 +245,6 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'View All User',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              
                             ),
                           ),
                         ),
@@ -321,8 +319,7 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) =>
-                                            const AddBar()));
+                                        builder: (context) => const AddBar()));
                               },
                               leading: Icon(
                                 CupertinoIcons.square,
@@ -333,11 +330,10 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'Add Bar',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              
                             ),
                           ),
                         ),
-                         Material(
+                        Material(
                           borderRadius: BorderRadius.circular(5),
                           color: allbar
                               ? Colors.grey.shade500
@@ -370,11 +366,10 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'All Bars',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              
                             ),
                           ),
                         ),
-                         Material(
+                        Material(
                           borderRadius: BorderRadius.circular(5),
                           color: inactivebar
                               ? Colors.grey.shade500
@@ -407,7 +402,6 @@ class _CustomOpenDrawerState extends State<CustomOpenDrawer> {
                                 'Inactive Bar',
                                 style: TextStyle(color: Colors.white),
                               ),
-                              
                             ),
                           ),
                         ),

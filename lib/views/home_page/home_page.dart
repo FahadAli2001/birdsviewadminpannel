@@ -1,7 +1,7 @@
 import 'package:birdsviewadminpannel/views/dashboard/dashboard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
- 
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                           padding: EdgeInsets.symmetric(
                               horizontal: size.width * 0.01),
                           child: const TextField(
-                             cursorColor: Colors.grey,
+                            cursorColor: Colors.grey,
                             textAlignVertical: TextAlignVertical.center,
                             style: TextStyle(color: Colors.grey),
                             textInputAction: TextInputAction.done,
@@ -151,8 +151,7 @@ class _HomePageState extends State<HomePage> {
                               child: Row(
                                 children: [
                                   Checkbox(value: true, onChanged: (val) {}),
-                                   
-                                    Text(
+                                  Text(
                                     'Remember Me',
                                     style: TextStyle(
                                         color: Colors.black,
@@ -164,23 +163,27 @@ class _HomePageState extends State<HomePage> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context)
-                                =>const DashBoard()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const DashBoard()));
                               },
                               child: Card(
                                 elevation: 5,
                                 child: Container(
                                   width: size.width * 0.09,
-                                  height: size.height  * 0.06 ,
+                                  height: size.height * 0.06,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(5),
-                                    color: Colors.blue.shade600
-                                  ),
-                                  child:const Center(
-                                    child: Text('Sign In',style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold
-                                    ),),
+                                      borderRadius: BorderRadius.circular(5),
+                                      color: Colors.blue.shade600),
+                                  child: const Center(
+                                    child: Text(
+                                      'Sign In',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold),
+                                    ),
                                   ),
                                 ),
                               ),

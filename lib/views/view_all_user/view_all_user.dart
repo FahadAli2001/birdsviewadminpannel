@@ -1,7 +1,7 @@
 import 'package:birdsviewadminpannel/widget/custom_bottom_bar/custom_bottom_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
- 
+
 import '../../widget/custom_drawer/custom_closed_drawer.dart';
 import '../../widget/custom_drawer/custom_open_drawer.dart';
 
@@ -173,9 +173,8 @@ class _ViewAllUsersState extends State<ViewAllUsers> {
                           width: size.width,
                           padding: const EdgeInsets.symmetric(horizontal: 10),
                           decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(color: Colors.grey.shade300)
-                          ),
+                              color: Colors.white,
+                              border: Border.all(color: Colors.grey.shade300)),
                           child: ListView(
                             shrinkWrap: true,
                             physics: const NeverScrollableScrollPhysics(),
@@ -221,8 +220,7 @@ class _ViewAllUsersState extends State<ViewAllUsers> {
                                               fontWeight: FontWeight.bold))),
                                 ],
                                 rows: [
-                                  DataRow(
-                                    cells: [
+                                  DataRow(cells: [
                                     const DataCell(Text('1')),
                                     const DataCell(Text('User 1')),
                                     const DataCell(
@@ -239,7 +237,8 @@ class _ViewAllUsersState extends State<ViewAllUsers> {
                                       height: size.height * 0.05,
                                       decoration: BoxDecoration(
                                           color: Colors.grey,
-                                          borderRadius: BorderRadius.circular(5)),
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
                                       child: const Center(
                                           child: Text(
                                         "Appoint As Admin",
@@ -254,8 +253,7 @@ class _ViewAllUsersState extends State<ViewAllUsers> {
                                         color: Colors.red)),
                                   ]),
                                   //
-                                    DataRow(
-                                    cells: [
+                                  DataRow(cells: [
                                     const DataCell(Text('2')),
                                     const DataCell(Text('User 2')),
                                     const DataCell(
@@ -272,7 +270,8 @@ class _ViewAllUsersState extends State<ViewAllUsers> {
                                       height: size.height * 0.05,
                                       decoration: BoxDecoration(
                                           color: Colors.grey,
-                                          borderRadius: BorderRadius.circular(5)),
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
                                       child: const Center(
                                           child: Text(
                                         "Appoint As Admin",
@@ -314,7 +313,5 @@ class _ViewAllUsersState extends State<ViewAllUsers> {
         ),
       ),
     );
-  
-  
   }
 }

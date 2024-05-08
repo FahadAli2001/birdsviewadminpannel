@@ -19,12 +19,12 @@ class CustomTextField extends StatelessWidget {
           style: const TextStyle(color: Colors.grey),
           textInputAction: TextInputAction.done,
           decoration: InputDecoration(
-              hoverColor: Colors.grey,
-              hintText: hintText,
-              hintStyle: const TextStyle(color: Colors.grey),
-              border: const OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.grey)),
-            ),
+            hoverColor: Colors.grey,
+            hintText: hintText,
+            hintStyle: const TextStyle(color: Colors.grey),
+            border: const OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.grey)),
+          ),
         ),
       ),
     );

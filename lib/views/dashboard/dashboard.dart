@@ -604,13 +604,12 @@ class _DashBoardState extends State<DashBoard> {
               bottom: 0,
               left: drawer == true ? size.width * 0.1 : size.width * 0.2,
               child: Container(
-                width: drawer == true ? size.width * 0.9 : size.width * 0.8,
-                height: size.height * 0.085,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey.shade400)),
-                child:const CustomBottomBar()
-              ),
+                  width: drawer == true ? size.width * 0.9 : size.width * 0.8,
+                  height: size.height * 0.085,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.grey.shade400)),
+                  child: const CustomBottomBar()),
             ),
           ],
         ),
