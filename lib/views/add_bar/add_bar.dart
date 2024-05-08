@@ -337,7 +337,8 @@ class _AddBarState extends State<AddBar> {
                                       width: size.width * 0.1,
                                       decoration: BoxDecoration(
                                           color: Colors.blue.shade600,
-                                          borderRadius: BorderRadius.circular(5)),
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
                                       child: const Center(
                                         child: Text(
                                           'Submit',
