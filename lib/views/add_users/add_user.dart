@@ -381,7 +381,7 @@ class _AddUsersState extends State<AddUsers> {
                       ),
                       child: Padding(
                         padding: EdgeInsets.symmetric(
-                            horizontal: size.width * 0.015,
+                            horizontal: size.width * 0.01,
                             vertical: size.height * 0.015),
                         child: Card(
                           elevation: 5,
@@ -393,27 +393,13 @@ class _AddUsersState extends State<AddUsers> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  padding: const EdgeInsets.all(10),
-                                  color: Colors.blue.shade600,
-                                  width: size.width,
-                                  child: const Text(
-                                    'Add A New UsER',
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ),
-                                //
-                                SizedBox(
-                                  height: size.height * 0.01,
-                                ),
+                                 
                                 //
 
                                 SizedBox(
                                   child: Padding(
                                     padding: EdgeInsets.symmetric(
-                                        horizontal: size.width * 0.015,
+                                        horizontal: size.width * 0.03,
                                         vertical: size.height * 0.015),
                                     child: Column(
                                       crossAxisAlignment:
