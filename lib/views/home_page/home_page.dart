@@ -219,11 +219,10 @@ class _HomePageState extends State<HomePage> {
                       height: size.height  ,
                       decoration: const BoxDecoration(
                           color: Colors.blue,
-                          borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(10),
-                              topLeft: Radius.circular(10),
-                              bottomLeft: Radius.circular(10),
-                              bottomRight: Radius.circular(10))),
+                          
+                         
+                              )
+                              ,
                     ),
                   ),
                   Positioned(
@@ -236,8 +235,8 @@ class _HomePageState extends State<HomePage> {
                       decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(10),
-                              bottomRight: Radius.circular(10))),
+                              topLeft: Radius.circular(50),
+                              topRight: Radius.circular(50))),
                       child: Padding(
                         padding: EdgeInsets.all(size.height * 0.02),
                         child: Column(
